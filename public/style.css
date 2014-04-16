@@ -1,0 +1,177 @@
+/* remove margin and padding */
+
+body,
+h1, h2, h3, h4, h5, h6,
+ul, ol, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.1;
+  padding: 0.5em;
+  background: #F4F0F2;
+  color: #474647;
+  max-width: 640px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+/* fade in content when fonts are ready */
+.js body {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+     -moz-transition: opacity 0.8s;
+      -ms-transition: opacity 0.8s;
+       -o-transition: opacity 0.8s;
+          transition: opacity 0.8s;
+}
+
+.js.wf-inactive body,
+.js.wf-active body {
+  opacity: 1;
+}
+
+
+body, h1, h2 {
+  font-size: 26px;
+}
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+}
+
+#intro img {
+  width: 140px;
+  float: right;
+  border-radius: 70px 70px 0 0;
+  margin: 0 0 10px 10px;
+}
+
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 1.0em;
+}
+
+
+h1, h2, p, li {
+  padding: 0.1em 0;
+}
+
+li {
+  list-style: none;
+  font-weight: 700;
+}
+
+.word, .char {
+  display: inline-block;
+}
+
+
+.char {
+  position: relative;
+}
+
+
+.credo { font-style: italic; }
+
+.copy {
+  font-size: 20px;
+}
+
+#contact p {
+  margin-bottom: 0.8em;
+}
+
+.week_section {
+  border-radius: .25em;
+}
+
+.week_section h2 {
+  font-size: 90%;
+  padding: .25em 0em .25em .1em;
+}
+
+.project_section {
+  padding: .25em 0em .25em 0em;
+}
+
+.project_section li {
+  font-size: 80%;
+  padding: .15em 0em .15em .15em;
+  background: #4AC6CF;
+  border-radius: .15em;  
+}
+
+.tag {
+  display: inline;
+  padding: .25em .5em .25em .5em;
+  font-size: 50%;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: .35em;
+  margin-left: .25em;
+}
+
+.tag-default {
+  background-color: #FA384D;
+}
+
+.tag_section {
+  padding: .25em 0em .25em 0em;
+}
+
+.notes_section {
+  padding: .25em 0em .25em .5em;
+  font-size: 70%;   
+}
+
+.task_section {
+  padding: .25em 0em .25em .5em;
+}
+
+.task_section li {
+  font-size: 70%;
+  background: #8DD2D7;
+}
+
+
+/* desktop sizing */
+@media screen and (min-width: 480px) {
+
+  body {
+    padding: 1.0em;
+  }
+
+  body, h1, h2 {
+    font-size: 32px;
+  }
+
+  #intro img {
+    width: 200px;
+    border-radius: 100px 100px 0 0;
+  }
+
+  .copy { font-size: 28px; }
+
+}
+

@@ -1,0 +1,14 @@
+reports:
+
+  - week: "2014-04-14: So it begins..."
+    projects:
+      - project: Chronicler tags
+        tags: [Yaml, Mustache]
+        note: Add tags to Chronicler status report
+        tasks:
+          - task: Style it
+            note: Make the tags good to look at
+          - task: Links
+            note: List projects and tasks that have tag when tag is clicked.
+            tags: [HTML, Javascript]
+          - task: Test it

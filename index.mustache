@@ -1,0 +1,71 @@
+<!doctype html class="no-js">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Corbett Martin - status report</title>
+  <meta name="viewport" content="width=device-width" />
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300'
+    rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic'
+    rel='stylesheet' type='text/css'>    
+  <link href="style.css" rel="stylesheet" />    
+  <script src="js/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="intro">
+  <h1>Corbett Martin - Software Architect</h1>
+  <h3 class="credo copy">I like building things...</h3>
+</div>
+
+{{#each reports}}
+  <section class="week_section">
+    <h2>{{ week }}</h2>
+    <ul>
+      {{#each projects}}
+        <section class="project_section">
+          <li>{{ project }}</li>
+          {{#if tags}}
+            <section class="tag_section">
+              {{#each tags}}
+                <span class="tag tag-default">{{.}}</span>
+              {{/each}}
+            </section>
+          {{/if}}
+          {{#if note}}
+            <section class="notes_section">
+              <p>{{ note }}</p>
+            </section>
+          {{/if}}
+          {{#if tasks}}
+            <!-- task section: tags & notes are optional -->
+            <section class="task_section">
+              {{#each tasks}}
+                <ul>
+                  <li>{{ task }}</li>
+                  {{#if tags}}
+                    <section class="tag_section">
+                      {{#each tags}}
+                        <span class="tag tag-default">{{.}}</span>
+                      {{/each}}
+                    </section>
+                  {{/if}}
+                  {{#if note}}
+                    <section class="notes_section">
+                      <p>{{ note }}</p>
+                    </section>
+                  {{/if}}
+                </ul>
+              {{/each}}            
+            </section> 
+          {{/if}} 
+        </section>        
+      {{/each}}
+    </ul> 
+  </section>
+{{/each}}
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
