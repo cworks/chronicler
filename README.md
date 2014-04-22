@@ -8,7 +8,7 @@ Chronicler - A nice little status report generator
 ### Use
 * Enter your status into data.yml
 	* See sublime_text/status_report.sublime-snippet for yaml structure
-	* If you use sublime text then install the snippet, press 'pw<tab>' to use
+	* If you use sublime text then install the snippet, press 'pw'+TAB to use
 	* Also look at data.yml for starter example
 * grunt
 * deploy ./build/* to web server
