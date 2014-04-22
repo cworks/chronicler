@@ -1,0 +1,31 @@
+<!--
+ --- This is a sublime text snippet that will create a status
+ --- report for a new week.  It creates the required yaml structure
+ --- optional elements are:
+ --- tags, note(s) and task(s)
+ --- NOTE:
+ --- top-level yaml tag 'reports:' must be present as root element
+ --- (see data.yml for example)
+ --- To create new snippet in sublime text
+ --- Tools > New Snippet...
+ --- copy this file into snippet
+ --- save into sublime text User folder, name 'status_report.sublime-snippet'
+ -->
+<snippet>
+	<content><![CDATA[
+  - week: "${1:week}"
+    projects:
+      - project: "${2:projectName}"
+        tags: ["${3:tag1}", "${4:tag2}", "${5:tag3}"]
+        note: "${6:projectNote}"
+        tasks:
+          - task: "${7:taskTitle}"
+            note: "${8:taskNote}"
+            tags: ["${9:tag4}", "${10:tag5}", "${11:tag6}"]
+          - task: "${12:anotherTaskTitle}"
+            note: "${13:anotherTaskNote}"
+            tags: ["${14:tag7}", "${15:tag8}", "${16:tag9}"]
+]]></content>
+	<tabTrigger>pw</tabTrigger>
+	<scope>source.yaml</scope>
+</snippet>
